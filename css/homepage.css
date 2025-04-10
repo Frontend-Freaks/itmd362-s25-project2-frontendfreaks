@@ -36,6 +36,7 @@ a {
   max-width: 200px;
   position: fixed;
   right: -250px;
+  transition: right 0.2s;
 }
 
 .nav-links-mobile ul {
