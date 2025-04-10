@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CL Chicago Community</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -17,62 +18,67 @@
         <li>General</li>
         <li>Missed Connections</li>
         <li>Artists</li>
-        <li><button class="show-more">+ Show 8 More</button></li>
+        <li class="show-more" onclick="toggleMore()">+ Show More</li>
+      </ul>
+      <ul id="more-categories" style="display:none">
+        <li>Events</li>
+        <li>Volunteers</li>
+        <li>Politics</li>
+        <li>Groups</li>
+        <li>Rants & Raves</li>
+        <li>Classes</li>
+        <li>Local News</li>
+        <li>Support</li>
       </ul>
     </nav>
   </header>
 
   <section class="filters">
-    <div class="checkboxes">
-      <label><input type="checkbox"> Check all</label>
-      <label><input type="checkbox"> Search titles only</label>
-      <label><input type="checkbox"> Has image</label>
-      <label><input type="checkbox"> Posted today</label>
-      <label><input type="checkbox"> Hide duplicates</label>
-    </div>
-    <div class="location-filter">
-      <label>Miles from zip</label>
-      <input type="number" placeholder="Enter miles...">
-      <button>Use map...</button>
-      <button class="reset">Reset</button>
-    </div>
+    <label><input type="checkbox" id="checkAll"> Check all</label>
+    <label><input type="checkbox"> Search titles only</label>
+    <label><input type="checkbox"> Has image</label>
+    <label><input type="checkbox"> Posted today</label>
+    <label><input type="checkbox"> Hide duplicates</label>
   </section>
 
   <section class="price-filter">
-    <label>Price Range:</label>
-    <input type="text" placeholder="Min">
-    <input type="text" placeholder="Max">
-    <button class="uncheck">Uncheck all</button>
-    <button class="apply">Apply</button>
+    <label>Distance (miles):</label>
+    <input type="number" placeholder="Miles from zip...">
+    <button onclick="resetFilters()">Reset</button>
+  </section>
+
+  <section class="search-header">
+    <input type="text" placeholder="Search Community...">
+    <button onclick="alert('Searching...')">Search</button>
   </section>
 
   <main>
-    <div class="search-header">
-      <h2>All Chicago Community</h2>
-      <input type="text" placeholder="Search Community...">
-    </div>
-
     <ul class="posts">
-      <li># Avant Pop duo seeks collaborators - City of Chicago • pic</li>
-      <li>* Snake rack - Chicago • pic</li>
-      <li>* Tricolor hognoses - City of Chicago • pic</li>
-      <li>* Will never give up - Downtown Evanston/Skokie</li>
-      <li># Havapoo - 60137</li>
-      <li>* Black King in a White Tesla - 290 This Morning - City of Chicago</li>
-      <li>* Anyone bored - Hillside</li>
-      <li>* Drummer and Bassist needed for post-punk trio - Chicago</li>
-      <li># Pedal Steel Player Wanted - Chicago Near O'Hare • pic</li>
-      <li>* Lead Guitarist Wanted - Chicago Near O'Hare • pic</li>
-      <li>* 34th Annual Chicago Drum Show - Kane County Fair Grounds • pic</li>
-      <li># Spooky punk band - Chicago</li>
-      <li># Baby bearded dragon - Aurora • pic</li>
-      <li>* Language exchange friend (English/Spanish) - City of Chicago</li>
-      <li># Chris Brown Tickets 8/28/25 - City of Chicago</li>
+      <li><span># Avant Pop duo seeks collaborators</span><span>Chicago • pic</span></li>
+      <li><span>* Snake rack</span><span>Chicago • pic</span></li>
+      <li><span>* Tricolor hognoses</span><span>Chicago • pic</span></li>
+      <li><span>* Will never give up</span><span>Evanston/Skokie</span></li>
+      <li><span># Havapoo</span><span>60137</span></li>
+      <li><span>* Black King in a White Tesla</span><span>Chicago</span></li>
+      <li><span>* Anyone bored</span><span>Hillside</span></li>
+      <li><span>* Drummer and Bassist wanted</span><span>Chicago</span></li>
+      <li><span># Pedal Steel Player Wanted</span><span>Chicago • pic</span></li>
     </ul>
   </main>
 
   <footer>
-    <p>1 - 23 of 1,002 results</p>
+    <p>1 - 9 of 1,002 results</p>
   </footer>
+
+  <script>
+    function toggleMore() {
+      const more = document.getElementById('more-categories');
+      more.style.display = more.style.display === 'none' ? 'flex' : 'none';
+    }
+
+    function resetFilters() {
+      alert('Filters reset!');
+    }
+  </script>
 </body>
 </html>
