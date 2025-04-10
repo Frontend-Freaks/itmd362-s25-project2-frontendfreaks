@@ -31,6 +31,10 @@ body {
   font-weight: bold;
   padding: 0.5rem;
 }
+form {
+  display: grid;
+  gap: 1rem;
+}
 input {
   padding: 0.5rem;
   border: 1px solid #ccc;
