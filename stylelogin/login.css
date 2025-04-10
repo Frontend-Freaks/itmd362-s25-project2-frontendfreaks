@@ -57,6 +57,17 @@ button {
 button:hover {
   background-color: #a020f0;
 }
+.toggle-button {
+  margin: auto;
+  display: block;
+}
+.toggle-button:hover {
+  background-color: #800080;
+}
+
+.helper-link a {
+  font-size: 0.9rem;
+}
 @media (min-width: 600px) {
 }
 @media (min-width: 900px) {
