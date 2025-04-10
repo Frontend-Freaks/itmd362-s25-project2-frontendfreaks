@@ -53,12 +53,13 @@ a {
 
 .nav-links-mobile {
   color: var(--background);
-  background-color: var(--accent);
+  background-color: black;
   height: 100vh;
   width: 100%;
   max-width: 200px;
   position: fixed;
   right: -250px;
+  border-radius: 12px 0 0 0;
   transition: right 0.2s;
 }
 
