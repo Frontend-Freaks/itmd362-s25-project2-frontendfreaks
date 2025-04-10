@@ -1,123 +1,91 @@
-/* Clean, warm grey theme for Chicago Community Listings */
-
 body {
-  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #f2f2f2;
   color: #333;
 }
 
 header {
-  background-color: #d6d6d6;
-  padding: 1.5rem;
+  background-color: #555;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  border-bottom: 1px solid #bbb;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #222;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.sidebar {
-  background-color: #e2e2e2;
-  padding: 1.5rem;
-  width: 280px;
-  border-right: 1px solid #ccc;
-}
-
-.sidebar h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.sidebar ul {
+nav ul {
   list-style: none;
   padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 0.5rem;
-  color: #444;
-}
-
-.sidebar input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-.sidebar input[type="text"] {
-  width: 100px;
-  margin-top: 0.3rem;
-  padding: 0.3rem;
-  border: 1px solid #bbb;
-  background-color: #f9f9f9;
-  border-radius: 4px;
-}
-
-.sidebar button {
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  padding: 0.4rem 0.8rem;
-  border: none;
-  background-color: #bbb;
-  color: #222;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-main {
-  flex-grow: 1;
-  padding: 1.5rem;
-}
-
-.filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav li, .show-more {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #777;
+  border-radius: 5px;
+  color: white;
+  transition: background 0.3s;
+}
+
+nav li:hover, .show-more:hover {
+  background-color: #999;
+}
+
+.filters, .price-filter, .search-header {
+  padding: 1rem;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
-.filters input[type="text"],
-.filters select {
+.filters label, .price-filter label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
   padding: 0.5rem;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.listings article {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-.listings h2 {
-  margin: 0 0 0.3rem;
-  font-size: 1.1rem;
-  color: #111;
+button {
+  padding: 0.5rem 1rem;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.listings p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #666;
+button:hover {
+  background-color: #888;
+}
+
+.posts {
+  list-style: none;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #d6d6d6;
-  border-top: 1px solid #bbb;
-  color: #444;
+  background-color: #555;
+  color: white;
+  margin-top: 2rem;
 }
