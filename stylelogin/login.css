@@ -12,6 +12,15 @@ body {
   padding: 2rem;
   border-left: 5px solid #800080;
 }
+.navbar {
+  background-color: #800080;
+  padding: 1rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
 button {
   background-color: #800080;
   color: white;
