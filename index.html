@@ -1,128 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chicago Community Listings</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CL Chicago Community</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>☮ CL Chicago - Community</h1>
+    <h1>@ CL Chicago</h1>
+    <nav>
+      <ul>
+        <li>Community</li>
+        <li>Musicians</li>
+        <li>Pets</li>
+        <li>General</li>
+        <li>Missed Connections</li>
+        <li>Artists</li>
+        <li><button class="show-more">+ Show 8 More</button></li>
+      </ul>
+    </nav>
   </header>
-  <div class="container">
-    <aside class="sidebar">
-      <h2>Categories</h2>
-      <ul>
-        <li><input type="checkbox" checked> Musicians (365)</li>
-        <li><input type="checkbox" checked> Pets (328)</li>
-        <li><input type="checkbox" checked> General Community (99)</li>
-        <li><input type="checkbox" checked> Missed Connections (60)</li>
-        <li><input type="checkbox" checked> Artists (37)</li>
-        <li><a href="#">+ Show 8 more</a></li>
-      </ul>
 
-      <h2>Options</h2>
-      <ul>
-        <li><input type="checkbox"> Search titles only</li>
-        <li><input type="checkbox"> Has image</li>
-        <li><input type="checkbox"> Posted today</li>
-        <li><input type="checkbox"> Hide duplicates</li>
-      </ul>
+  <section class="filters">
+    <div class="checkboxes">
+      <label><input type="checkbox"> Check all</label>
+      <label><input type="checkbox"> Search titles only</label>
+      <label><input type="checkbox"> Has image</label>
+      <label><input type="checkbox"> Posted today</label>
+      <label><input type="checkbox"> Hide duplicates</label>
+    </div>
+    <div class="location-filter">
+      <label>Miles from zip</label>
+      <input type="number" placeholder="Enter miles...">
+      <button>Use map...</button>
+      <button class="reset">Reset</button>
+    </div>
+  </section>
 
-      <h2>Miles from Location</h2>
-      <input type="text" placeholder="Miles"> from zip<br>
-      <a href="#">Use map...</a><br>
-      <button>Reset</button>
-      <button>Apply</button>
-    </aside>
+  <section class="price-filter">
+    <label>Price Range:</label>
+    <input type="text" placeholder="Min">
+    <input type="text" placeholder="Max">
+    <button class="uncheck">Uncheck all</button>
+    <button class="apply">Apply</button>
+  </section>
 
-    <main>
-      <div class="filters">
-        <select>
-          <option>All Chicago</option>
-        </select>
-        <select>
-          <option>Community</option>
-        </select>
-        <select>
-          <option>All</option>
-        </select>
-        <input type="text" placeholder="Search community">
-        <select>
-          <option>List</option>
-        </select>
-        <select>
-          <option>Newest</option>
-        </select>
-      </div>
+  <main>
+    <div class="search-header">
+      <h2>All Chicago Community</h2>
+      <input type="text" placeholder="Search Community...">
+    </div>
 
-      <section class="listings">
-        <article>
-          <h2>Avant Pop duo seeks collaborators</h2>
-          <p>City of Chicago</p>
-        </article>
-        <article>
-          <h2>Snake rack</h2>
-          <p>Chicago</p>
-        </article>
-        <article>
-          <h2>Tricolor hognoses</h2>
-          <p>City of Chicago</p>
-        </article>
-        <article>
-          <h2>Will never give up</h2>
-          <p>Downtown Evanston / Skokie</p>
-        </article>
-        <article>
-          <h2>Havapoo</h2>
-          <p>60137</p>
-        </article>
-        <article>
-          <h2>Black King in a White Tesla - 290 This Morning</h2>
-          <p>City of Chicago</p>
-        </article>
-        <article>
-          <h2>Anyone bored</h2>
-          <p>Hillside</p>
-        </article>
-        <article>
-          <h2>Drummer and Bassist needed for post-punk trio</h2>
-          <p>Chicago</p>
-        </article>
-        <article>
-          <h2>Pedal Steel Player Wanted for Classic Country Band</h2>
-          <p>Chicago Near O'Hare</p>
-        </article>
-        <article>
-          <h2>Lead Guitarist Wanted for Classic Country Band</h2>
-          <p>Chicago Near O'Hare</p>
-        </article>
-        <article>
-          <h2>34th Annual Chicago Drum Show - May 17 & 18</h2>
-          <p>Kane County Fair Grounds</p>
-        </article>
-        <article>
-          <h2>Spooky punk band</h2>
-          <p>Chicago</p>
-        </article>
-        <article>
-          <h2>Baby bearded dragon</h2>
-          <p>Aurora</p>
-        </article>
-        <article>
-          <h2>Language exchange friend (English/Spanish)</h2>
-          <p>City of Chicago</p>
-        </article>
-        <article>
-          <h2>Chris Brown Tickets 8/28/25</h2>
-          <p>City of Chicago</p>
-        </article>
-      </section>
-    </main>
-  </div>
+    <ul class="posts">
+      <li># Avant Pop duo seeks collaborators - City of Chicago • pic</li>
+      <li>* Snake rack - Chicago • pic</li>
+      <li>* Tricolor hognoses - City of Chicago • pic</li>
+      <li>* Will never give up - Downtown Evanston/Skokie</li>
+      <li># Havapoo - 60137</li>
+      <li>* Black King in a White Tesla - 290 This Morning - City of Chicago</li>
+      <li>* Anyone bored - Hillside</li>
+      <li>* Drummer and Bassist needed for post-punk trio - Chicago</li>
+      <li># Pedal Steel Player Wanted - Chicago Near O'Hare • pic</li>
+      <li>* Lead Guitarist Wanted - Chicago Near O'Hare • pic</li>
+      <li>* 34th Annual Chicago Drum Show - Kane County Fair Grounds • pic</li>
+      <li># Spooky punk band - Chicago</li>
+      <li># Baby bearded dragon - Aurora • pic</li>
+      <li>* Language exchange friend (English/Spanish) - City of Chicago</li>
+      <li># Chris Brown Tickets 8/28/25 - City of Chicago</li>
+    </ul>
+  </main>
+
   <footer>
-    1 - 23 of 1,002
+    <p>1 - 23 of 1,002 results</p>
   </footer>
 </body>
 </html>
