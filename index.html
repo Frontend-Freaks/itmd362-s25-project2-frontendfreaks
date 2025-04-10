@@ -3,82 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CL Chicago Community</title>
+  <title>Chicago Musicians - Modern Redesign</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>@ CL Chicago</h1>
+  <header class="site-header">
+    <h1>🎸 Chicago Musicians</h1>
     <nav>
       <ul>
-        <li>Community</li>
-        <li>Musicians</li>
-        <li>Pets</li>
-        <li>General</li>
-        <li>Missed Connections</li>
-        <li>Artists</li>
-        <li class="show-more" onclick="toggleMore()">+ Show More</li>
-      </ul>
-      <ul id="more-categories" style="display:none">
-        <li>Events</li>
-        <li>Volunteers</li>
-        <li>Politics</li>
-        <li>Groups</li>
-        <li>Rants & Raves</li>
-        <li>Classes</li>
-        <li>Local News</li>
-        <li>Support</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#post">Post an Ad</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
   </header>
 
+  <section class="search-section">
+    <input type="text" placeholder="Search listings...">
+    <button class="search-button">Search</button>
+  </section>
+
   <section class="filters">
-    <label><input type="checkbox" id="checkAll"> Check all</label>
-    <label><input type="checkbox"> Search titles only</label>
-    <label><input type="checkbox"> Has image</label>
-    <label><input type="checkbox"> Posted today</label>
-    <label><input type="checkbox"> Hide duplicates</label>
+    <button class="filter-button">🎸 Instruments</button>
+    <button class="filter-button">🎤 Vocalists</button>
+    <button class="filter-button">🎹 Keys</button>
+    <button class="filter-button">🪘 Drums</button>
+    <button class="filter-button">📍 Near Me</button>
   </section>
 
-  <section class="price-filter">
-    <label>Distance (miles):</label>
-    <input type="number" placeholder="Miles from zip...">
-    <button onclick="resetFilters()">Reset</button>
+  <section class="listings">
+    <article class="listing">
+      <h2>Guitarist Wanted for Indie Rock Band</h2>
+      <p>Looking for a committed guitarist. Weekly rehearsals. Ages 20–35 preferred.</p>
+      <button class="view-button">View Details</button>
+    </article>
+    <article class="listing">
+      <h2>Female Vocalist Seeks Acoustic Partner</h2>
+      <p>Passionate about indie-folk and looking to collaborate on covers and originals.</p>
+      <button class="view-button">View Details</button>
+    </article>
   </section>
 
-  <section class="search-header">
-    <input type="text" placeholder="Search Community...">
-    <button onclick="alert('Searching...')">Search</button>
-  </section>
-
-  <main>
-    <ul class="posts">
-      <li><span># Avant Pop duo seeks collaborators</span><span>Chicago • pic</span></li>
-      <li><span>* Snake rack</span><span>Chicago • pic</span></li>
-      <li><span>* Tricolor hognoses</span><span>Chicago • pic</span></li>
-      <li><span>* Will never give up</span><span>Evanston/Skokie</span></li>
-      <li><span># Havapoo</span><span>60137</span></li>
-      <li><span>* Black King in a White Tesla</span><span>Chicago</span></li>
-      <li><span>* Anyone bored</span><span>Hillside</span></li>
-      <li><span>* Drummer and Bassist wanted</span><span>Chicago</span></li>
-      <li><span># Pedal Steel Player Wanted</span><span>Chicago • pic</span></li>
-    </ul>
-  </main>
-
-  <footer>
-    <p>1 - 9 of 1,002 results</p>
+  <footer class="site-footer">
+    <p>&copy; 2025 Chicago Musicians Redesign</p>
   </footer>
-
-  <script>
-    function toggleMore() {
-      const more = document.getElementById('more-categories');
-      more.style.display = more.style.display === 'none' ? 'flex' : 'none';
-    }
-
-    function resetFilters() {
-      alert('Filters reset!');
-    }
-  </script>
 </body>
 </html>
