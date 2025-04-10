@@ -16,13 +16,6 @@ a {
   padding: 1.5rem;
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  margin: 0 1rem;
-}
-
 #logo {
   max-width: 80px;
   padding-left: 0.25rem;
