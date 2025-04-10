@@ -1,54 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community Listings - Chicago</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicago Community Listings</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Chicago Community Board</h1>
-    <div class="filters">
-      <select name="location">
-        <option selected>Chicago</option>
-      </select>
-      <select name="category">
-        <option selected>Community</option>
-        <option>Musicians</option>
-        <option>Pets</option>
-        <option>General Community</option>
-        <option>Missed Connections</option>
-        <option>Artists</option>
-      </select>
-      <input type="text" placeholder="Search listings..." />
-    </div>
+    <h1>☮ CL Chicago - Community</h1>
   </header>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><input type="checkbox" checked> Musicians (365)</li>
+        <li><input type="checkbox" checked> Pets (328)</li>
+        <li><input type="checkbox" checked> General Community (99)</li>
+        <li><input type="checkbox" checked> Missed Connections (60)</li>
+        <li><input type="checkbox" checked> Artists (37)</li>
+        <li><a href="#">+ Show 8 more</a></li>
+      </ul>
 
-  <main>
-    <section class="listings">
-      <article>
-        <h2>Avant Pop duo seeks collaborators</h2>
-        <p><span>City of Chicago</span> • <time>19m ago</time></p>
-      </article>
-      <article>
-        <h2>Snake rack</h2>
-        <p><span>Chicago</span> • <time>41m ago</time></p>
-      </article>
-      <article>
-        <h2>Tricolor hognoses city of</h2>
-        <p><span>Chicago</span> • <time>41m ago</time></p>
-      </article>
-      <article>
-        <h2>Will never give up</h2>
-        <p><span>Downtown Evanston/Skokie</span> • <time>55m ago</time></p>
-      </article>
-      <!-- Add more listings similarly -->
-    </section>
-  </main>
+      <h2>Options</h2>
+      <ul>
+        <li><input type="checkbox"> Search titles only</li>
+        <li><input type="checkbox"> Has image</li>
+        <li><input type="checkbox"> Posted today</li>
+        <li><input type="checkbox"> Hide duplicates</li>
+      </ul>
 
+      <h2>Miles from Location</h2>
+      <input type="text" placeholder="Miles"> from zip<br>
+      <a href="#">Use map...</a><br>
+      <button>Reset</button>
+      <button>Apply</button>
+    </aside>
+
+    <main>
+      <div class="filters">
+        <select>
+          <option>All Chicago</option>
+        </select>
+        <select>
+          <option>Community</option>
+        </select>
+        <select>
+          <option>All</option>
+        </select>
+        <input type="text" placeholder="Search community">
+        <select>
+          <option>List</option>
+        </select>
+        <select>
+          <option>Newest</option>
+        </select>
+      </div>
+
+      <section class="listings">
+        <article>
+          <h2>Avant Pop duo seeks collaborators</h2>
+          <p>City of Chicago</p>
+        </article>
+        <article>
+          <h2>Snake rack</h2>
+          <p>Chicago</p>
+        </article>
+        <article>
+          <h2>Tricolor hognoses</h2>
+          <p>City of Chicago</p>
+        </article>
+        <article>
+          <h2>Will never give up</h2>
+          <p>Downtown Evanston / Skokie</p>
+        </article>
+        <article>
+          <h2>Havapoo</h2>
+          <p>60137</p>
+        </article>
+        <article>
+          <h2>Black King in a White Tesla - 290 This Morning</h2>
+          <p>City of Chicago</p>
+        </article>
+        <article>
+          <h2>Anyone bored</h2>
+          <p>Hillside</p>
+        </article>
+        <article>
+          <h2>Drummer and Bassist needed for post-punk trio</h2>
+          <p>Chicago</p>
+        </article>
+        <article>
+          <h2>Pedal Steel Player Wanted for Classic Country Band</h2>
+          <p>Chicago Near O'Hare</p>
+        </article>
+        <article>
+          <h2>Lead Guitarist Wanted for Classic Country Band</h2>
+          <p>Chicago Near O'Hare</p>
+        </article>
+        <article>
+          <h2>34th Annual Chicago Drum Show - May 17 & 18</h2>
+          <p>Kane County Fair Grounds</p>
+        </article>
+        <article>
+          <h2>Spooky punk band</h2>
+          <p>Chicago</p>
+        </article>
+        <article>
+          <h2>Baby bearded dragon</h2>
+          <p>Aurora</p>
+        </article>
+        <article>
+          <h2>Language exchange friend (English/Spanish)</h2>
+          <p>City of Chicago</p>
+        </article>
+        <article>
+          <h2>Chris Brown Tickets 8/28/25</h2>
+          <p>City of Chicago</p>
+        </article>
+      </section>
+    </main>
+  </div>
   <footer>
-    <p>&copy; 2025 Chicago Community Listings</p>
+    1 - 23 of 1,002
   </footer>
 </body>
 </html>
