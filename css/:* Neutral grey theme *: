@@ -1,0 +1,103 @@
+/* Updated neutral grey theme with full layout */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+.sidebar {
+  background-color: #ddd;
+  padding: 1rem;
+  width: 250px;
+  border-right: 1px solid #bbb;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.listings article {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.listings h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.listings p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ccc;
+  color: #333;
+  border-top: 1px solid #aaa;
+  margin-top: 2rem;
+}
