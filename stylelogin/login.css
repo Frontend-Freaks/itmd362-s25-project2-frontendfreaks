@@ -58,15 +58,20 @@ button:hover {
   background-color: #a020f0;
 }
 .toggle-button {
+  text-align: center;
+  background-color: transparent;
+  color: #800080;
   margin: auto;
   display: block;
 }
 .toggle-button:hover {
   background-color: #800080;
+  color: white;
 }
 
 .helper-link a {
   font-size: 0.9rem;
+  color: #800080;
 }
 @media (min-width: 600px) {
 }
