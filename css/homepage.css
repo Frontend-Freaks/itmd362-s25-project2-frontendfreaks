@@ -1,9 +1,13 @@
 :root {
   --text: rgb(5, 18, 36);
-  --background: rgb(240, 245, 253);
+  --background: rgb(240, 242, 245);
   --primary: rgb(36, 129, 225);
   --secondary: rgb(138, 130, 238);
   --accent: rgb(128, 92, 233);
+}
+
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -75,11 +79,19 @@ a {
 
 section {
   font-size: 1.25rem;
+  padding: 1rem 0.75rem;
 }
 
 section ul {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+section ul li {
+  border-radius: 12px;
+  border-left: 6px solid #2f2f2f;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 section ul li a {
