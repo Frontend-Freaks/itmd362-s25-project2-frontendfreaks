@@ -35,7 +35,7 @@ a {
   width: 100%;
   max-width: 200px;
   position: fixed;
-  right: 0px;
+  right: -250px;
 }
 
 .nav-links-mobile ul {
@@ -47,4 +47,8 @@ a {
 
 .nav-links-mobile ul li {
   font-size: 1.5em;
+}
+
+.nav-links-mobile.show {
+  right: 0px;
 }
