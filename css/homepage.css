@@ -28,3 +28,23 @@ a {
 .hamburger-menu img {
   min-width: 60px;
 }
+
+.nav-links-mobile {
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+  max-width: 200px;
+  position: fixed;
+  right: 0px;
+}
+
+.nav-links-mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.nav-links-mobile ul li {
+  font-size: 1.5em;
+}
