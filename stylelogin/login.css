@@ -25,7 +25,13 @@ button {
   background-color: #800080;
   color: white;
   border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
 }
 button:hover {
   background-color: #a020f0;
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 900px) {
 }
