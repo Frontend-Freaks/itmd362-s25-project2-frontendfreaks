@@ -1,3 +1,11 @@
+:root {
+  --text: rgb(5, 18, 36);
+  --background: rgb(240, 245, 253);
+  --primary: rgb(36, 129, 225);
+  --secondary: rgb(138, 130, 238);
+  --accent: rgb(128, 92, 233);
+}
+
 img {
   max-width: 100%;
 }
@@ -6,7 +14,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: gray;
+  background-color: var(--secondary);
   min-height: 60px;
 }
 
@@ -21,6 +29,16 @@ a {
   padding-left: 0.25rem;
 }
 
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-buttons img {
+  min-width: 40px;
+}
+
 .hamburger-menu {
   padding: 0.25rem;
 }
@@ -30,7 +48,8 @@ a {
 }
 
 .nav-links-mobile {
-  background-color: aqua;
+  color: var(--background);
+  background-color: var(--accent);
   height: 100vh;
   width: 100%;
   max-width: 200px;
