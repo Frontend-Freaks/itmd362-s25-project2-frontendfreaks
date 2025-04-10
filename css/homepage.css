@@ -1,3 +1,29 @@
-body {
-  background-color: red;
+img {
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: gray;
+  min-height: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1.5rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+#logo {
+  max-width: 100px;
+  padding-left: 0.25rem;
 }
