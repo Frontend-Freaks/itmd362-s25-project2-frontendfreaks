@@ -64,14 +64,12 @@ a {
   transition: right 0.2s;
 }
 
-.nav-links-mobile ul {
+.nav-links-mobile {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem 0;
-}
-
-.nav-links-mobile ul li {
   font-size: 1.5em;
 }
 
