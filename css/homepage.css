@@ -113,12 +113,22 @@ a.homepage {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 810px) {
+/* Tablet Styles */
+@media screen and (min-width: 510px) {
   html {
     height: 100%;
   }
   body {
     height: 100%;
+  }
+  .nav-buttons__homepage img {
+    min-width: 60px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 810px) {
+  body {
     padding: 20px;
   }
   main.homepage {
@@ -138,9 +148,6 @@ a.homepage {
   }
   .nav-buttons__homepage {
     gap: 0 1rem;
-  }
-  .nav-buttons__homepage img {
-    min-width: 60px;
   }
   #logo {
     max-width: 100px;
